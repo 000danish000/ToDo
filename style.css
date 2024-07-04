@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+VN:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+VN:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    min-height: 500px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#userInput {
+    width: 100%;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 0 2px grey;
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#task li{
+    list-style: none;
+    padding: 5px 11px;
+    font-family: "Playwrite VN", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+}
+li i{
+    position: absolute;
+    right: 10px;
+}
+.completed{
+    text-decoration: line-through;
+    background-color: #aeb5bb;
+    border-radius: 5px;
+
+}
