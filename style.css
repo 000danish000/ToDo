@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+VN:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+VN:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 * {
@@ -14,12 +14,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-
+.inputButton{
+    display: flex;
+}
 .taskContainer {
     height: 500px;
     overflow-y: auto;
-
 }
 
 .container {
@@ -29,11 +31,22 @@
     border-radius: 10px;
     padding: 15px;
 }
+.todoTitle{
+    height: auto !important;
+    min-height: auto !important;
+    margin: 7px;
+    font-family: "Playwrite IT Moderna", cursive;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: larger;
 
+}
 #userInput {
     width: 100%;
     padding: 10px;
-    margin: 2px;
+    margin: 2px 10px 2px 3px;
     border-radius: 5px;
     outline: 0;
     border: 0;
@@ -43,6 +56,22 @@
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
+}
+.addTaskBtn{
+    width: 20%;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    border: 0px;
+    box-shadow: 0 0 2px grey;
+    margin: 2px;
+    color: #505050
+}
+.addTaskBtn:active{
+box-shadow: 0 0 5px rgb(51, 51, 51) inset !important;
+}
+.addTaskBtn:hover{
+    box-shadow: 0 0 5px rgb(51, 51, 51);
 }
 
 #task li {
